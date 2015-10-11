@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int factorial;
+	int fact(int);
+	int i=0;
+	printf("\nEnter a number");
+	scanf("%d",&i);
+	factorial=fact(i);
+	printf("\nThe factorial of %d is %d",i,factorial);
+	getch();
+}
+int fact(int h)
+{
+int res=1;
+	if(h==0)
+	return 1;
+	for(int p=h;p>0;p--)
+	{
+		res=res*p;
+	}
+	return res;
+}
